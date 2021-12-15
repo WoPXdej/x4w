@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="theme-color" content="#151515">
+  <meta name="msapplication-navbutton-color" content="#151515">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#151515">
+
+  <meta property="og:image" content="/static/img/og.png"/>
+  <meta property="og:title" content="WoPX"/>
+  <meta property="og:description" content="Веб-морда"/>
+  
+  <script src="https://vk.com/js/api/openapi.js?162" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  type="text/css">
+  <!-- TODO: нахера здесь столько говна грузится? -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/css/nav.scss" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/theme.css" type="text/css">
+  <script src="/static/js/site.js"></script>
+
+  <title>WoPX</title>
+</head>
+
+<body class="d-flex flex-column" style="background-color: #1E1E1E">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <b>IrCA Duty</b>
+      </a>
+    </div>
+  </nav>
+
+  <div id="cookies-js-alerts">
+    <noscript>
+      <div class="py-12">
+        <div class="container">
+          <div class="row">
+            <p>Для работы сайта требуются javascript и cookies, включи их</p>
+          </div>
+        </div>
+      </div>
+    </noscript>
+
+    <div class="py-5" id="cookies-blocked">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Для работы сайта требуются cookies, включи их</p>
+            <script>
+              if (navigator.cookieEnabled) { $("#cookies-blocked").hide(); }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-content">
+    {% block pagecontent %}
+    {% endblock pagecontent %}
+  </div>
+
+  <footer id="sticky-footer" class="py-5 bg-dark text-white-50">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <small style="font-size: 12px;color: #8E40F6;">IrCa Duty</small>
+          <a href="https://github.com/Elchinchel/IrCA-Duty" style = "text-decoration: none;">
+            <img src="/static/img/socials/github.png" style="width:61px; height:25px; background-color: #8E40F6;">
+          </a>
+          <a href="https://vk.com/ircaduty">
+            <img src="/static/img/socials/vkmonochrome.png" style="width:25px; height:25px; background-color: #8E40F6;">
+          </a>
+        </div>
+        <div class="d-sm-none"><div class="p-1"></div></div>
+        <div class="col-sm-6 text-center">
+          <small style="font-size: 12px;color: #39eb51;">WoPX</small>
+          <a href="https://github.com/WoPXdej/x3r" style = "text-decoration: none;"><img
+            src="/static/img/socials/github.png" style="width:61px; height:25px; background-color: #39eb51;">
+          </a>
+          <a href="https://vk.com/wopx_cr"><img
+            src="/static/img/socials/vkmonochrome.png" style="width:25px; height:25px; background-color: #39eb51;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
