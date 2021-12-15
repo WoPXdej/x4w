@@ -8,15 +8,12 @@ from microvk import VkApi
 @dp.longpoll_event_register('хелп', 'help') #Автор: https://vk.com/id570532674, Доработал: https://vk.com/id194861150
 @dp.my_signal_event_register('хелп', 'help')
 def a(event: MySignalEvent) -> str:
-    event.msg_op(2, f''' 📗Команды IrCA Duty: vk.com/@ircaduty-comands
-⚙ Установка: https://vk.cc/c3coi7
-💻 Исходный код: https://vk.cc/bZPeP4
-🔧 Установка LP: https://vk.cc/c3cpNq
-📈 Команды LP: https://vk.cc/c3cpUH
+    event.msg_op(2, f''' ⚙ Наша группа: @wopx_cr
+💻 Исходный код: https://github.com/WoPXdej/x3r
 📓 Ваша админ панель: {db_gen.host}
-Если будет вопросы, то обратитесь к этим прекрасным людям - https://vk.com/id365530525
-https://vk.com/id194861150
-https://vk.com/id449770994''')
+Если будет вопросы, то обратитесь к этим прекрасным людям - https://vk.com/d_wopx
+https://vk.com/kratos_cr
+https://vk.com/wopx_cr''')
     return "ok"
 
 @dp.my_signal_event_register('кража')
