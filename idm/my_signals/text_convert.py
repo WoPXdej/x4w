@@ -1,7 +1,4 @@
 from idm.objects import dp, MySignalEvent
-# fixed bugs:
-# vk: http://vk.com/id194861150
-# github: https://github.com/Alex1249
 eng = u"~!@#$%^&qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOP{}ASDFGHJKL:\"|ZXCVBNM<>?"
 rus = u"ё!\"№;%:?йцукенгшщзхъфывапролджэячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭ/ЯЧСМИТЬБЮ,"
 # TODO: каво нахуй
