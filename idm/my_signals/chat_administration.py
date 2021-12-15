@@ -3,9 +3,6 @@ from idm.utils import get_index, find_mention_by_event
 from idm.objects import dp, MySignalEvent
 from microvk import VkApiResponseException
 
-# code from:
-# vk: http://vk.com/id194861150
-# github: https://github.com/Alex1249
 
 @dp.longpoll_event_register('добавить')
 #@dp.my_signal_event_register('добавить')
